@@ -21,7 +21,7 @@ fi
 
 # Start Spotify using URI
 pkill spotify
-spotify --uri="$uri" > /dev/null 2>&1 &
+spotify --no-zygote --uri="$uri" > /dev/null 2>&1 &
 
 export LANG="en_EN.UTF-8"
 
